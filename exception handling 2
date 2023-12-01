@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a,b,c;
+    cout<<"enter the values of a:"<<endl;
+cin>>a;
+cout<<"enter the value of b:"<<endl;
+cin>>b;
+try{
+    if(b==0){
+        throw;
+    }
+    c=a/b;
+    cout<<"result:"<<c<<endl;
+}
+catch(int exception)
+{
+return 0;}}
