@@ -1,0 +1,45 @@
+#include<iostream>
+#include<conio>
+class number{
+  private:
+  int a;
+  public:
+  void get_data(void);
+  int var_a(void);
+};
+class addition:public number{
+  private:
+  int b,sum;
+  public:
+  void gets(void);
+  int display(void);
+};
+  void number::getdata(void)
+{
+  cout<<"a=";
+  cin>>a;
+}
+  int number::var_a(void)
+{  return(a);
+}
+void addition::gets(void)
+{ getdata();
+cout<<"b=";
+cin>>b;
+}
+int addition::display(void)
+{
+  sum=var_a()+b;
+  return(sum);
+}
+  int main(void)
+{  clrscr();
+  int m;
+  addition n2;
+  n2.getdata();
+  n2.gets();
+  m=n2.display();
+  cout<<"sum is="<<m<<endl;
+  getch();
+  return o;
+}
