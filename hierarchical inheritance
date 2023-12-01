@@ -1,0 +1,58 @@
+#include<iostream>
+#include<conio>
+class A{
+  private:
+  int a;
+  public:
+  void get_data(void);
+  int var_a(void);
+};
+class B:classA{
+  private:
+  int b;
+  public:
+  void gets(void);
+  int var_b(void);
+};
+
+class C:public A{
+  private:
+  int c
+  public:
+  void input(void);
+ void output(void);
+};
+  void A::getdata(void)
+{
+  cout<<"a=";
+  cin>>a;
+}
+  int A::var_a(void)
+{  return(a);
+}
+void B::gets(void)
+{ cout<<"b=";
+cin>>b;
+}
+void B::display(void)
+{
+  cout<<"sum in class B:"<<var_a+b<<endl;
+}
+void C::input(void)
+cout<<"sum in clss C:"<<var_a+c<<endl;
+
+}
+  int main(void)
+
+{  clrscr();
+  B b1;
+ b1.getdata();
+ b1.gets();
+ b1.display();
+ C c1;
+ C1.getdata();
+ C1.input();
+ C1.output();
+  getch();
+  return 0;
+}
