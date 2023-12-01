@@ -1,45 +1,60 @@
 #include<iostream>
 #include<conio>
-class number{
+class A{
   private:
   int a;
   public:
   void get_data(void);
   int var_a(void);
 };
-class addition:public number{
+class B{
   private:
-  int b,sum;
+  int b;
   public:
   void gets(void);
+  int var_b(void);
+};
+
+class C:public A,public B{
+  private:
+  int m,n,sum;
+  public:
   int display(void);
 };
-  void number::getdata(void)
+  void A::getdata(void)
 {
   cout<<"a=";
   cin>>a;
 }
-  int number::var_a(void)
+  int A::var_a(void)
 {  return(a);
 }
-void addition::gets(void)
-{ getdata();
-cout<<"b=";
+void B::gets(void)
+{ cout<<"b=";
 cin>>b;
+
+
 }
-int addition::display(void)
+int B::var_b(void)
 {
-  sum=var_a()+b;
-  return(sum);
+  
+  return(b);
+}
+int C::display(void)
+m=var_a();
+n=var_b()'
+sum=m+n;
+return(sum);
 }
   int main(void)
+
 {  clrscr();
   int m;
-  addition n2;
-  n2.getdata();
-  n2.gets();
-  m=n2.display();
+  c1;
+  c1.getdata();
+  c1.gets();
+  m=c1.display();
   cout<<"sum is="<<m<<endl;
   getch();
-  return o;
+  return 0;
 }
