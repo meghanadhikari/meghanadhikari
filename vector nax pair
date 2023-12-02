@@ -1,0 +1,26 @@
+pair stores two values at a time
+int main(){
+pair<int , string>p;
+p=make_pair(1,"abc");
+//to make copy of pair
+pair<int,string>p1=p;
+
+
+
+vector<int> v;
+
+int n;
+cin>>n;
+for (i=0; i<n; i++){
+int x;
+cin>>x;
+v.push_back(x); o(1)
+}
+void display(vector<int>v)
+{for (i=0; i<v.size();i++)
+{cout<<v[i];
+}
+
+
+
+vector of pair<pair<int,int>>v;
